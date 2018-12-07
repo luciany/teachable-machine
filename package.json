@@ -36,11 +36,11 @@
     "stylint"
   ],
   "dependencies": {
-    "babel-preset-es2015": "^6.14.0",
+    "babel-preset-es2015": "^6.24.1",
     "babelify": "^7.3.0",
     "browserify": "^14.4.0",
-    "budo": "^10.0.3",
-    "concurrently": "^3.1.0",
+    "budo": "^10.0.4",
+    "concurrently": "^3.5.0",
     "cpx": "^1.5.0",
     "deeplearn": "file:deeplearn",
     "gifler": "git://github.com/themadcreator/gifler.git#v0.3.0",

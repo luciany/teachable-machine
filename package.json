@@ -29,7 +29,9 @@
     "budo": "budo src/index.js:bundle.js --port=3000 --live -v --dir=public -o",
     "budo-https": "budo src/index.js:bundle.js --ssl --cert=server.cer --key=server.key --port=3000 --live -v --dir=public -o",
     "watch": "npm run style-build && concurrently \"npm run assets-watch\" \"npm run html-watch\" \"npm run budo\" \"npm run style-watch\"",
-    "watch-https": "npm run style-build && concurrently \"npm run assets-watch\" \"npm run html-watch\" \"npm run budo-https\" \"npm run style-watch\""
+    "watch-https": "npm run style-build && concurrently \"npm run assets-watch\" \"npm run html-watch\" \"npm run budo-https\" \"npm run style-watch\"",
+    "snyk-protect": "snyk protect",
+    "prepare": "npm run snyk-protect"
   },
   "pre-commit": [
     "eslint",
@@ -48,11 +50,13 @@
     "ncp": "^2.0.0",
     "nib": "^1.1.2",
     "openssl": "^1.1.0",
-    "stylus": "^0.54.5"
+    "stylus": "^0.54.5",
+    "snyk": "^1.258.2"
   },
   "devDependencies": {
     "eslint": "^4.3.0",
     "pre-commit": "^1.2.2",
     "stylint": "^1.5.9"
-  }
+  },
+  "snyk": true
 }
